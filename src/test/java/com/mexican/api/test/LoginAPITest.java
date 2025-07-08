@@ -11,8 +11,7 @@ public class LoginAPITest {
     @Test
     public void loginTest(){
         AuthService authService = new AuthService();
-        Response response = authService.login("");
-
+        Response response = authService.login("passpayload here");
         response.then().log().all().assertThat().statusCode(200);
     }
     

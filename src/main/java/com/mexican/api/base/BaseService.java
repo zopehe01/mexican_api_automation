@@ -16,6 +16,7 @@ public class BaseService {
     }
 
     protected Response postRequest(String payload, String endpoint){
+        // enter postman api key to run this
         return requestSpecification
             .contentType(ContentType.JSON)
                 .header("x-api-key","")
