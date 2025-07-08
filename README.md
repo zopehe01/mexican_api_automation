@@ -56,5 +56,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 For any questions or feedback, feel free to reach out:
-- **Email**: zopehe01@example.com
+- **Email**: hzope12@gmail.com
 - **GitHub**: [ZopeHe01](https://github.com/ZopeHe01)
