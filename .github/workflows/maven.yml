@@ -48,6 +48,6 @@ jobs:
       if: always()
       uses: dorny/test-reporter@v1.9.1
       with:
-        name: JUnit Resylts
+        name: JUnit Results
         path: target/surefire-reports/junitreports/TEST-*.xml
         reporter: java-junit
