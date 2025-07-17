@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="API Automation Suite" parallel="false" thread-count="5">
+    <listeners>
+        <listener class-name="com.mexican.api.listeners.TestListener"></listener>
+    </listeners>
+    <test name="Users API Tests">
+        <classes>
+            <class name="com.mexican.api.test.LoginAPITest"/>
+            <class name="com.mexican.api.test.SingupTest"/>
+            <class name="com.mexican.api.test.ForgotPasswordTest"/>
+            <class name="com.mexican.api.test.UserManagementTest"/>
+        </classes>
+    </test>
+</suite>
