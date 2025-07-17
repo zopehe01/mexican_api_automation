@@ -34,7 +34,15 @@ jobs:
       run: mvn clean test -Dsuite=testng -X
 
     - name: Upload a Build Artifact
+      if: always()
       uses: actions/upload-artifact@v4.4.3
       with: 
         name: Logs
         path:  logs/
+
+    - name: Publish Test Reporter
+      if: always()
+      uses: dorny/test-reporter@v1.9.1
+      with:
+        name: JUnit Resylts
+        path: target/surefire-reports/junitreports/TEST-*.xml
