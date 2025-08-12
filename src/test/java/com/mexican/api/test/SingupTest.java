@@ -12,15 +12,15 @@ import io.restassured.response.Response;
 public class SingupTest {
 
     @Test
-    public void validateSingupFlow(){
+    public void validateSingupFlow() {
         SingUpRequest singUpRequest = new SingUpRequest.Builder()
-            .setFirstName("Hemant")
-            .setLastName("Zope")
-            .setEmailId("test@gmail.com")
-            .setMobileNo("123456789")
-            .setUsername("")
-            .setPassword("")
-            .build();
+                .setFirstName("Hemant")
+                .setLastName("Zope")
+                .setEmailId("test@gmail.com")
+                .setMobileNo("123456789")
+                .setUsername("")
+                .setPassword("")
+                .build();
         AuthService authService = new AuthService();
         Response response = authService.signUp(singUpRequest);
         SingUpResponse singUpResponse = response.as(SingUpResponse.class);
